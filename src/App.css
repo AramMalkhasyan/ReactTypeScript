@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+}
+.product_image{
+    width: 70px;
+    height: 110px;
+}
+.show_more_button{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(170, 170, 0);
+    border: none;
+    cursor: pointer;
+    margin-bottom: 15px;
+    box-shadow: 5px 5px 5px;
+}
+.show_more_button:hover{
+    box-shadow:none
+}
+.hide_button{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(0, 63, 122);
+    border: none;
+    cursor: pointer;
+    margin-bottom: 15px;
+    box-shadow: 5px 5px 5px
+}
+.hide_button:hover{
+    box-shadow:none
+}
+.item_price{
+    font-weight: bold;
+}
+.item_description{
+    text-align: center;
+    padding: 0 40px;
+}
+.list_item{
+    margin: 0 auto;
+    width: 50%;
+    border: solid 1px;
+    margin-bottom: 2px;
+    text-align: center;
+}
+.error_message{
+    text-align: center;
+    color: red;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.model{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.model_content{
+    width: 450px;
+    padding: 30px;
+    background-color: white;
+    position: absolute;
+    top: 5%;
+    left: 35%;
+    border-radius: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.create_product_input{
+    padding: 2px 4px;
+    width: 100%;
+}
+.create_product_button{
+    margin-top: 2px;
+    background-color: rgb(170, 170, 0);
+    padding: 4px 8px;
+    border: none;
+    cursor: pointer;
+}
+.create_product_button:hover{
+    color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.add_product_button{
+    border: none;
+    background-color: brown;
+    color: white;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    border-radius: 50%;
+    padding: 10px 15px;
+    font-size: larger;
+    cursor: pointer;
+}
+.add_product_button:hover{
+    
+    padding: 15px 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
